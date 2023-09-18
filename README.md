@@ -52,7 +52,7 @@ Day 5: Prototyping and User Testing
 Create interactive prototypes for initial user testing and feedback.
 Gather feedback for UI improvements.
 ### Day 6-12: Backend Development and Database Design
-### Day 6-10: Backend Development with PHP
+ Day 6-10: Backend Development with PHP
 
 Set up the backend server using PHP.
 Implement core functionalities such as user authentication, course management, and content delivery.
@@ -61,7 +61,7 @@ Implement core functionalities such as user authentication, course management, a
 Design the database schema using SQL.
 Integrate the backend with the SQL database for data storage and retrieval.
 ### Day 13-15: Finalization, Deployment, and Presentation
-### Day 13-14: Frontend-Backend Integration and Testing
+ Day 13-14: Frontend-Backend Integration and Testing
 
 Integrate the frontend HTML/CSS with the PHP backend.
 Conduct testing to ensure seamless functionality and fix any issues.
