@@ -1,4 +1,5 @@
 ### Project Specifications:
+## Project Title:E-Learner Pro
 
 # Scope of this project
 The scope of a web or mobile application that provides online courses, quizzes, assignments, and feedback to learners and instructors is substantial and offers various opportunities. The e-learning industry has been growing steadily, and creating such a platform can address several key aspects within this sector.
@@ -15,7 +16,7 @@ Here's a detailed scope breakdown:
 
 
 # Stakeholder
-Stakeholders for a web or mobile application that provides online courses, quizzes, assignments, and feedback can vary based on the project's scope and purpose. Here's a breakdown of potential stakeholders:
+
 1.	Students:
 •	Primary users who will use the application to access courses, quizzes, assignments, and receive feedback.
 2.	Educators and Instructors:
@@ -26,8 +27,6 @@ Stakeholders for a web or mobile application that provides online courses, quizz
 •	Individuals or organizations creating educational content such as videos, documents, and quizzes for the platform.
 5.	Education Institutions:
 •	Schools, colleges, universities, or other organizations providing courses and using the platform for education delivery.
-6.	Parents (if applicable):
-•	Parents of students using the platform who may want to monitor their child's progress and engagement.
 7.	Regulatory Bodies:
 •	Organizations overseeing educational standards and compliance with regulations related to e-learning platforms.
 
@@ -36,9 +35,6 @@ Stakeholders for a web or mobile application that provides online courses, quizz
 ## Roles And Responsibilites 
 
 ## Deliverables
-
-## Project Title:
-
 
 ## Project Data:
 Creating a project database for a web or mobile application that provides online courses, quizzes, assignments, and feedback involves designing a suitable database schema to store relevant data. Here's an example of a simplified database schema:
@@ -55,10 +51,15 @@ Entities and Attributes:
 •	Title
 •	Description
 
-## Project Manager:
 
+## Key Members:Rahul Ranjan
+               Sukhwinder Singh
+               Sakashi Thakur
+               Shameen Ahmad
+               Harsh Pandey 
+               Chander Thakur
+               
 
-## Key Member:
 
 ## Scope:
 
