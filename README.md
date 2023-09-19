@@ -1,7 +1,7 @@
 ### Project Specifications:
 ## Project Title:E-Learner Pro
 
-# Scope of this project
+# Scope of this project  
 There are many people who have an interest in coding but cannot find a place to start . People who already have a career in another field but decide to take an interest in web or software development etc. But they do not know how to get started. 
 we want tp build an e learning web app that can provide learners to start from the begineer and follow a roadmap to go from beginner to pro in whatever they want to learn . 
 
