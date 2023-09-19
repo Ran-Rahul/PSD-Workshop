@@ -60,7 +60,7 @@ Define the project's objectives and scope.
 Identify the core features and functionalities.
 Day 2: Technology Stack Setup
 
-Set up development environments for HTML, CSS, PHP, and SQL.
+Set up development environments for HTML, CSS, PHP,JS and SQL.
 
 ### Day 3-5:Design and Prototyping
 ### Day 3-4: UI Design and HTML Structure
