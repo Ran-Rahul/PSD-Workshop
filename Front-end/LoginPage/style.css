@@ -23,13 +23,15 @@ header{
     padding: 20px 100px;
   /*background: rgb(2, 58, 241);*/
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
 .logo{
-    font-size: 2em;
+    font-size: 3em;
     color: #fff;
+
     user-select: none;
     left: 0;
 
