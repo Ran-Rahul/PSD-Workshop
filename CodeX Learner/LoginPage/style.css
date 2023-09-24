@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url('background.jpg')no-repeat;
+    background:url('Background.jpg')no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -21,15 +21,17 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-  /*background: rgb(2, 58, 241);*/
+  
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
 .logo{
-    font-size: 2em;
+    font-size: 3em;
     color: #fff;
+
     user-select: none;
     left: 0;
 
