@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Bg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.Container1 {
+    display: block;
+    width: 1454px;
+    height: 320px;
+    border: 2px solid rgb(11, 11, 11);
+    margin-top: 30px;
+}
+
+.box {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.Container2 {
+    display: block;
+    width: 1000px;
+    height: 244px;
+    border: 2px solid rgb(11, 11, 11);
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.Container3 {
+    display: block;
+    width: 429px;
+    height: 244px;
+    border: 2px solid rgb(11, 11, 11);
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.spec-box {
+    display: flex;
+}
+
+/* .Container box {
+    padding: 20px;
+    margin: 20px;
+    width: 50px;
+    height: 30px;
+    border: 2px solid gold;
+} */
+
+.startyourjourney {
+    /* width: 956px;
+    height: 646px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    font-size: 36px;
+}
+
+.Adv {
+    font-size: 30px;
+    margin-left: 3px;
+}
+
+.start {
+    margin-top: 50px;
+    margin-left: 140px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.start :hover {
+    color: rgb(168, 171, 171);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 65px;
+    color: #070707;
+
+    user-select: none;
+    /* left: 0; */
+    margin-right: 0px;
+
+}
+
+.navigator a {
+    position: relative;
+    font-size: 1.1em;
+    color: #0a0909;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+
+
+}
+
+.navigator a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+
+}
+
+.navigator a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1)
+}
+
+.navigator .btmLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #201a1a;
+    outline: none;
+    border-radius: 6px;
+    left: 2px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #c54747;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .5s;
+
+}
+
+.navigator .btmLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #0e0e0e;
+    font-weight: 500;
+
+}
