@@ -14,11 +14,13 @@ body {
 /* .foot {
     height: fit-content;
 } */
+.heading {}
 
 .quiz-container {
     /* max-width: 1000px; */
-    width: 800px;
-    height: 270px;
+    width: 820px;
+    height: 300px;
+    display: block;
     /* align-self: center; */
     margin-top: 100px;
     margin-right: 350px;

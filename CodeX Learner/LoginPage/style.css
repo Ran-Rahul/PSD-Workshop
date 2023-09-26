@@ -43,11 +43,12 @@ header{
     text-decoration: none;
     font-weight:500 ;
     margin-left:10px ;
+    justify-content: center;
 
 
 }
 .navigator a::after{
-    content: '';
+    content: '  ';
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -63,7 +64,7 @@ header{
 }
 
 .navigator a:hover:after{
-    transform-origin: left;
+    transform-origin: center;
     transform:scaleX(1)
 
 }
@@ -86,6 +87,7 @@ header{
 .navigator .btmLogin-popup:hover{
     background:#fff ;
     color: #162938;
+    justify-content: center;
 }
 .wrapper{
     position: relative;

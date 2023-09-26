@@ -9,9 +9,9 @@ const quizData = [
         options: [1979, 1980, 1981, 1982],
         correct: 1980
     },
-    
+
 ];
- 
+
 
 let currentQuestionIndex = 0;
 const questionText = document.getElementById("question-text");
