@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   
 else{
 
+    //storing the values into sql
   
   
   $sql="INSERT INTO `login` (`Email`, `Username`, `Passward`, `dt`) VALUES ('$_email', '$_username', '$_password', current_timestamp());";
@@ -39,6 +40,7 @@ else{
   </div>';
   $login=true;
 session_start();
+//login
 $_SESSION['loggedin']=true;
 $_SESSION['username']=$_username;
 
