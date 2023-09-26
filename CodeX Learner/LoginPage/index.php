@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     
 
-
+//database connection
     $servername="localhost";
     $username="root";
     $password="";
