@@ -1,3 +1,60 @@
+
+<?php 
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+
+//database connection
+    $servername="localhost";
+    $username="root";
+    $password="";
+    $database="project";
+    
+    $conn=mysqli_connect($servername ,$username , $password , $database);
+    
+
+
+  $_username=$_POST["userrname"];
+  $_password=$_POST["password"];
+  $_email=$_POST["email"];
+  $existsql="SELECT * FROM `login` WHERE Username ='$_username'";
+  $result=mysqli_query($conn, $existsql);
+  $numexistrows=mysqli_num_rows($result);
+  if($numexistrows>0){
+    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Username already exists</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  }
+  
+else{
+
+    //storing the values into sql
+  
+  
+  $sql="INSERT INTO `login` (`Email`, `Username`, `Passward`, `dt`) VALUES ('$_email', '$_username', '$_password', current_timestamp());";
+  $result=mysqli_query($conn, $sql);
+  if($result){
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Your account created successfully.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  $login=true;
+session_start();
+//login
+$_SESSION['loggedin']=true;
+$_SESSION['username']=$_username;
+
+  }
+  
+  
+}
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +62,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website with login Page</title>
     <link rel="stylesheet" href="style.css">
-    <script class="u-script" type="text/javascript" src="script.js" defer=""></script>
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
 
     <header>
         <h2 class="logo">CodeX Learner</h2>
         <nav class ="navigator">
-            <a href ="Home.html">Home</a>
+            <a href ="#">Home</a>
             <a href ="#">about</a>
-            <!-- <a href ="#">service</a> -->
+            <a href ="#">service</a>
             <a href ="#">contact</a>
             <button class="btmLogin-popup">Login</button>
         </nav>
@@ -27,21 +84,21 @@
 
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="#">
+            <form method="post" action="login.php">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email text" name ="email" required>
+                        <input type="email " name="email" required>
                         <label>   Email</label>
                     
                 </div>
                 <div class="input-box">
                     <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required name="passward">
+                        <input type="password" name="password" required>
                         <label>Password</label>
                     
                 </div>
                 <div class="remember-forgot">
-                    <label ><input type="checkbox">Remember me</label>
+                    <label ><input type="checkbox" >Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
@@ -56,22 +113,22 @@
 
         <div class="form-box register">
             <h2>Register</h2>
-            <form action="#">
+            <form method="post" action="index.php">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
-                        <input type="text"  name="username" required>
+                        <input type="text" name="userrname" required>
                         <label>   Username</label>
                     
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" name="email" required>
+                        <input type="email"  name="email" required>
                         <label>   Email</label>
                     
                 </div>
                 <div class="input-box">
                     <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required>
+                        <input type="password" name="password" required>
                         <label>Password</label>
                     
                 </div>

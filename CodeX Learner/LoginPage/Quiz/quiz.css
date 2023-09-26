@@ -5,16 +5,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* background: url('Background.jpg')no-repeat; */
+   
+    
     background-size: cover;
     background-position: center;
 }
 
-/* .foot {
-    height: fit-content;
-} */
-.heading {}
+
 
 .quiz-container {
     /* max-width: 1000px; */
