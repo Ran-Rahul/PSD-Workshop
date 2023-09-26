@@ -9,23 +9,9 @@ const quizData = [
         options: [1979, 1980, 1981, 1982],
         correct: 1980
     },
-    // Add more questions and answers here
+    
 ];
-
-// function checkButton() {
-//     var getSelectedValue = document.querySelector(
-//         'input[name="season"]:checked');
-
-//     if (getSelectedValue != null) {
-//         document.getElementById("disp").innerHTML
-//             = getSelectedValue.value
-//             + " season is selected";
-//     }
-//     else {
-//         document.getElementById("error").innerHTML
-//             = "*You have not selected any season";
-//     }
-// }
+ 
 
 let currentQuestionIndex = 0;
 const questionText = document.getElementById("question-text");
