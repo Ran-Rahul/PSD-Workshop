@@ -44,7 +44,7 @@ function checkAnswer(selectedOption) {
     currentQuestionIndex++;
 
     if (currentQuestionIndex < quizData.length) {
-        loadQuestion();
+        // loadQuestion();
     } else {
         // Quiz is finished, you can display the result or take other actions
         questionText.innerText = "Quiz Finished!";
@@ -54,8 +54,15 @@ function checkAnswer(selectedOption) {
 }
 
 nextButton.addEventListener("click", () => {
+    currentQuestionIndex++;
     if (currentQuestionIndex < quizData.length) {
         loadQuestion();
+    }
+    else {
+        // Quiz is finished, you can display the result or take other actions
+        questionText.innerText = "Quiz Finished!";
+        optionsContainer.innerHTML = "";
+        nextButton.style.display = "none";
     }
 });
 
