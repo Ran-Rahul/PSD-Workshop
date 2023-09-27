@@ -12,6 +12,8 @@ const prevButton = document.querySelector("#prevButton");
 const nextButton = document.querySelector("#nextButton");
 const submitButton = document.querySelector("#submitButton");
 
+const textArea = document.getElementById("codeX");
+
 function displayQuestion() {
     questionContainer.querySelector("h1").textContent = `Question ${currentQuestionIndex + 1}:`;
     questionContainer.querySelector("p").textContent = questions[currentQuestionIndex];
@@ -20,20 +22,26 @@ function displayQuestion() {
 function goToPreviousQuestion() {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
+        textArea.value = "";
         displayQuestion();
     }
+
 }
 
 function goToNextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
+        textArea.value = "";
         displayQuestion();
     }
+
 }
 
 function submitAnswers() {
     // Add your code to process and submit the user's answers here
     // For now, we'll just display an alert
+    prevButton.disabled = true;
+    nextButton.disabled = true;
     alert("Answers submitted!");
 }
 
