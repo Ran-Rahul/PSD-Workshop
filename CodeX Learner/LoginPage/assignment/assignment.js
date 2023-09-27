@@ -13,6 +13,7 @@ const nextButton = document.querySelector("#nextButton");
 const submitButton = document.querySelector("#submitButton");
 
 const textArea = document.getElementById("codeX");
+var answer = ["", "", ""];
 
 function displayQuestion() {
     questionContainer.querySelector("h1").textContent = `Question ${currentQuestionIndex + 1}:`;
@@ -21,8 +22,9 @@ function displayQuestion() {
 
 function goToPreviousQuestion() {
     if (currentQuestionIndex > 0) {
+        answer[currentQuestionIndex] = textArea.value;
         currentQuestionIndex--;
-        textArea.value = "";
+        textArea.value = answer[currentQuestionIndex];
         displayQuestion();
     }
 
@@ -30,8 +32,9 @@ function goToPreviousQuestion() {
 
 function goToNextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
+        answer[currentQuestionIndex] = textArea.value;
         currentQuestionIndex++;
-        textArea.value = "";
+        textArea.value = answer[currentQuestionIndex];;
         displayQuestion();
     }
 
