@@ -22,11 +22,11 @@ saveHighScore = e => {
     e.preventDefault(); 
 
     const score = {
-        // score: Math.floor(Math.random() * 100), // used for testing 
+        score: Math.floor(Math.random() * 100), // used for testing 
         score: mostRecentScore, 
         name: username.value 
     }; 
-    // console.log(score); 
+     console.log(score); 
 
     highScores.push(score); // adds score to highScore array
     highScores.sort( (a,b) => b.score - a.score); // sorts scores from highest to lowest 
