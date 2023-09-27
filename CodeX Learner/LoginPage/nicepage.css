@@ -49620,4 +49620,52 @@ html {
   font-size: 16px;
 }
 
+
+
+/* Style the container */
+.u-sheet-2 {
+  max-width: 800px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: #f2f2f2; /* Set a background color */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style the heading */
+h1 {
+  font-size: 24px; /* Adjust the font size */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Style the textarea */
+#blog-content {
+  width: 100%; /* Take up the full width of its container */
+  padding: 10px; /* Add padding for better readability */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style the submit button */
+#submit-button {
+  background-color: #007BFF; /* Set a background color */
+  color: #fff; /* Set text color to white */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Style the blog output area */
+#blog-output {
+  margin-top: 10px; /* Add some spacing from the form */
+}
+
+
+
+
+
+
+
+
+
 /*end-variables base-font-size*/
