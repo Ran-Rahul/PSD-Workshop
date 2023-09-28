@@ -1,0 +1,26 @@
+.u-container-layout-2 {
+  max-width: 400px; /* Change this value to adjust the maximum width of the card */
+  margin: 0 auto;
+}
+
+.u-container-layout-2 .u-image {
+  width: 100px; /* Change this value to adjust the width of the course image */
+  height: 100px; /* Change this value to adjust the height of the course image */
+}
+
+.u-container-layout-2 h3 {
+  font-size: 18px; /* Change this value to adjust the font size of the course title */
+}
+
+.u-container-layout-2 p {
+  font-size: 14px; /* Change this value to adjust the font size of the course description */
+}
+
+.u-container-layout-2 .u-btn {
+  font-size: 14px; /* Change this value to adjust the font size of the course button */
+  padding: 10px 20px; /* Change this value to adjust the padding of the course button */
+}
+.container {
+  max-width: 1200px; /* Change this value to the maximum width you want */
+  margin: 0 auto; /* This centers the container horizontally */
+}

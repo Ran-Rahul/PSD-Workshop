@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Post</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <div class="create-post-container">
+        <h1>Create a New Post</h1>
+        <form action="submit_post.php" method="POST">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <br><br>
+            <label for="postContent">Content:</label>
+            <textarea id="postContent" name="postContent" rows="6" cols="50" required></textarea>
+            <br><br>
+            <input type="submit" value="Create Post">
+        </form>
+    </div>
+</body>
+</html>
+

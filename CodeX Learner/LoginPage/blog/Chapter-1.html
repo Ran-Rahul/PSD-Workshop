@@ -2,6 +2,8 @@
 <html style="font-size: 16px;" lang="en">
 
 <head>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="keywords" content="Post 1 Headline">
@@ -16,7 +18,54 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
 
+<style  >
+body {
+  background-color: #f2f2f2;
+}
 
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #f2f2f2;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-link {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-link:hover {
+  background-color: #0062cc;
+}
+
+.quiz-results {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+
+</style>
   <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -27,14 +76,16 @@
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 
-<body data-path-to-root="./" class="u-body u-xl-mode" data-lang="en">
+<body 
+
+data-path-to-root="./" class="u-body u-xl-mode" data-lang="en">
   <header class="u-clearfix u-header u-header" id="sec-48c3">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://nicepage.com" class="u-image u-logo u-image-1">
         <img src="../images/codex-logo.png" class="u-logo-image u-logo-image-1">
       </a>
       <a href="https://nicepage.com/k/interactive-website-templates"
-        class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-4-base u-radius-28 u-btn-1">Signup/Login</a>
+       
       <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
           <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
@@ -108,7 +159,7 @@
     <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
 
       <div class="u-align-justify u-blog-control u-post-content u-text u-text-2 fr-view">
-        Sample small text. Enter Text here.
+      
       
         
 
@@ -140,11 +191,11 @@
   <div class="quiz-container">
     <h2>Quiz</h2>
   
-    <button class="quiz">
-    <a href ="index.html">Attempt Quiz</a>
-    <div id="quizResults"></div>
-  </button>
-</div>
+    <div class="quiz">
+      <a href="index.html" class="quiz-link">Attempt Quiz</a>
+      <div id="quizResults" class="quiz-results"></div>
+    </div>
+  </div>
 
 <script>
   function submitQuiz() {
